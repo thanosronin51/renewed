@@ -51,6 +51,4 @@ wcwidth==0.2.6
 whitenoise==6.4.0
 django_heroku
 django-admin-soft-dashboard
-django-tempus-dominus
 django-user-agents
-django-storage-supabase
