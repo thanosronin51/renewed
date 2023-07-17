@@ -1,18 +1,13 @@
 
 import os
 from pathlib import Path
-import environ
 from django.contrib.messages import constants as messages
 
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = ')_z--t-qq1=s!l*c-1pg(%$3l%=ys9m7!fh@jtom47ozn-24^*'
 
