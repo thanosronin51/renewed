@@ -1,7 +1,6 @@
 
 import os
 from pathlib import Path
-import django_heroku
 import environ
 from django.contrib.messages import constants as messages
 
