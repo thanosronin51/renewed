@@ -2,10 +2,8 @@
 import os
 from pathlib import Path
 import django_heroku
-import environ
 
 from django.contrib.messages import constants as messages
-
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -143,7 +141,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-
 CELERY_BROKER_URL = 'redis://localhost:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
@@ -170,3 +167,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+
+
+
