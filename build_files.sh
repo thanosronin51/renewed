@@ -7,6 +7,7 @@ pip install django-storages
 pip install crispy-heroku
 pip install django-timezone-field
 pip install django-user-agents
+pip install djangorestframework
 pip install crispy-bootstrap4
 pip install -r requirements.txt
 python3.9 manage.py collectstatic
