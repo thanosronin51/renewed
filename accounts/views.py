@@ -123,8 +123,6 @@ def register_view(request):
 
         return render(request, "accounts/register_form.html", context)
 
-from django_user_agents.utils import get_user_agent
-from ip2geotools.databases.noncommercial import DbIpCity
 from user_agents import parse
 
 
@@ -164,11 +162,7 @@ def login_view(request):
 
                 # Get the location information from the IP address
                 location = None
-                try:
-                    response = DbIpCity.get(ip_address, api_key='free')
-                    location = response.city if response.city else response.region
-                except:
-                    pass
+
 
                 # Create a login history entry
                 LoginHistory.objects.create(
