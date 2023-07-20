@@ -10,7 +10,6 @@ billiard==3.6.4.0
 bleach==6.0.0
 boto3==1.26.114
 botocore==1.29.114
-celery==5.2.7
 certifi==2022.12.7
 cffi==1.15.1
 chardet==5.1.0
@@ -20,9 +19,7 @@ click-didyoumean==0.3.0
 click-plugins==1.1.1
 click-repl==0.2.0
 colorama==0.4.6
-crispy-bootstrap4==2022.1
 cron-descriptor==1.2.35
-cryptography==40.0.2
 cssselect==1.2.0
 decorator==5.1.1
 defusedxml==0.7.1
@@ -31,12 +28,9 @@ dill==0.3.6
 dj-database-url==2.0.0
 Django==4.2
 django-admin-soft-dashboard==1.0.12
-django-allauth==0.54.0
 django-storages==1.13.2
-django-tempus-dominus==5.1.2.17
 django-timezone-field==5.0
 django-user-agents==0.4.0
-djangorestframework==3.14.0
 docutils==0.20.1
 exceptiongroup==1.1.2
 frozenlist==1.4.0
