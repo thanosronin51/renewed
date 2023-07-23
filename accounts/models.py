@@ -1,4 +1,4 @@
-from storages.backends.s3boto3 import S3Boto3Storage
+
 import random
 import uuid
 
@@ -436,10 +436,10 @@ class AccountDetails(models.Model):
     )
 
 
-    picture = models.FileField(
+    picture = models.ImageField(
         null=True,
         blank=True,
-        storage=S3Boto3Storage(),
+        upload_to='account_pictures/',
         default=('qww.png')
     )
 
