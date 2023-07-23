@@ -164,15 +164,3 @@ AUTHENTICATION_BACKENDS = (
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AWS_ACCESS_KEY_ID = 'AKIASY5V5EFLYNKBOK75'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'newblog-bucket'
-AWS_S3_REGION_NAME = 'eu-north-1'
-AWS_S3_FILE_OVERWRITE=False
-AWS_DEFAULT_ACL=None
-AWS_S3_VERIFY=True
-
-
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
